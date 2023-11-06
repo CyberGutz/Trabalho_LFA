@@ -73,7 +73,7 @@ class Minimizacao:
     @staticmethod
     def afEq(afd1, afd2):
         afConcatenado = Minimizacao.concatAF(afd1, afd2)
-        if Minimizacao.stateEq(afConcatenado, afd1.inicial, afd2.inicial):
+        if Minimizacao.stateEq(afConcatenado, afd1.inicial, int("1{}".format(afd2.inicial))):
             return True
         else:
             return False

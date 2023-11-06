@@ -123,7 +123,7 @@ if __name__ == '__main__':
     af6.criaEstado(1, True)
     af6.criaEstado(2, False, True)
     af6.criaTransicao(1,2,'b')
-    af6.criaTransicao(2,1,'b')
+    af6.criaTransicao(2,1,'a')
     
     print(Minimizacao.afEq(af5, af6))
     
